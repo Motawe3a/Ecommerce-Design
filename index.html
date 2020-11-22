@@ -24,7 +24,7 @@
                     <img src="images/logo.png" width="125px">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="menuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Product</a></li>
                         <li><a href="">About</a></li>
@@ -33,6 +33,7 @@
                     </ul>
                 </nav>
                 <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
             </div>
             <!-- Home description -->
             <div class="row">
@@ -360,6 +361,19 @@
             <p class="copyright">Copyright 2020 - Ahmed Motawea</p>
         </div>
     </div>
+
+    <!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById('menuItems');
+        MenuItems.style.maxHeight = "0px";
+        function menuToggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight == "200px"
+            } else {
+                MenuItems.style.maxHeight == "0px"
+            }
+        }
+    </script>
 </body>
 
 </html>
